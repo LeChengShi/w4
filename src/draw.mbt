@@ -1,18 +1,33 @@
-pub fn start() -> Unit {
 
+struct Position {
+  mut x : Int
+  mut y : Int
 }
 
-pub fn update() -> Unit {
+struct Color {
+  mut index : UInt
+  mut palette : UInt
+}
 
-  ///    if inipos.x <= 80 {
-  ///        inipos.x += 1;
+let inipos : Position = { x: 0, y: 0 }
+
+let color : Color = { index: 1, palette: 1 }
+
+fn drawTile(mousepos:Position) -> Unit {
+    @wasm4.set_draw_colors(index=color.index, color.palette)
+  @wasm4.rect(mousepos.x, mousepos.y, 80, 80)
+}
+fn none() -> Unit {
+
+  ///    if mousepos.x <= 80 {
+  ///        mousepos.x += 1;
   ///    } else {
-  ///        inipos.x = 0;
+  ///        mousepos.x = 0;
   ///    }
-  ///    if inipos.y <= 80 {
-  ///        inipos.y += 1;
+  ///    if mousepos.y <= 80 {
+  ///        mousepos.y += 1;
   ///    } else {
-  ///        inipos.y = 0;
+  ///        mousepos.y = 0;
   ///    }
   if @wasm4.get_gamepad(index=1).button_right && inipos.x < 80 {
     inipos.x += 1
@@ -26,12 +41,6 @@ pub fn update() -> Unit {
   if @wasm4.get_gamepad(index=1).button_up && inipos.y > 0 {
     inipos.y -= 1
   }
-
-  if @wasm4.get_mouse().left {
-    let mousepos:Position={x:@wasm4.get_mouse().x, y:@wasm4.get_mouse().y}
-    drawTile(mousepos)
-  }
-
   if @wasm4.get_gamepad(index=1).button_1 {
     @wasm4.tone_note_mode(
       (@wasm4.Note::new(60, bend=10), None),
