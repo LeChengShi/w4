@@ -1,0 +1,201 @@
+{
+  "source_dir": "H:\\humorousClock\\w4",
+  "name": "moonbit/demo",
+  "packages": [
+    {
+      "is-main": false,
+      "is-third-party": false,
+      "root-path": "H:\\humorousClock\\w4\\src",
+      "root": "moonbit/demo",
+      "rel": "",
+      "files": {
+        "H:\\humorousClock\\w4\\src\\draw.mbt": {
+          "backend": [
+            "Wasm",
+            "WasmGC",
+            "Js",
+            "Native"
+          ],
+          "optlevel": [
+            "Debug",
+            "Release"
+          ]
+        },
+        "H:\\humorousClock\\w4\\src\\game.mbt": {
+          "backend": [
+            "Wasm",
+            "WasmGC",
+            "Js",
+            "Native"
+          ],
+          "optlevel": [
+            "Debug",
+            "Release"
+          ]
+        },
+        "H:\\humorousClock\\w4\\src\\top.mbt": {
+          "backend": [
+            "Wasm",
+            "WasmGC",
+            "Js",
+            "Native"
+          ],
+          "optlevel": [
+            "Debug",
+            "Release"
+          ]
+        },
+        "H:\\humorousClock\\w4\\src\\voice.mbt": {
+          "backend": [
+            "Wasm",
+            "WasmGC",
+            "Js",
+            "Native"
+          ],
+          "optlevel": [
+            "Debug",
+            "Release"
+          ]
+        }
+      },
+      "wbtest-files": {},
+      "test-files": {},
+      "deps": [
+        {
+          "path": "moonbitlang/wasm4",
+          "alias": "wasm4"
+        }
+      ],
+      "wbtest-deps": [],
+      "test-deps": [],
+      "artifact": "H:\\humorousClock\\w4\\target\\wasm-gc\\release\\check\\demo.mi"
+    },
+    {
+      "is-main": false,
+      "is-third-party": false,
+      "root-path": "H:\\humorousClock\\w4\\src\\lib",
+      "root": "moonbit/demo",
+      "rel": "lib",
+      "files": {
+        "H:\\humorousClock\\w4\\src\\lib\\hello.mbt": {
+          "backend": [
+            "Wasm",
+            "WasmGC",
+            "Js",
+            "Native"
+          ],
+          "optlevel": [
+            "Debug",
+            "Release"
+          ]
+        }
+      },
+      "wbtest-files": {},
+      "test-files": {
+        "H:\\humorousClock\\w4\\src\\lib\\hello_test.mbt": {
+          "backend": [
+            "Wasm",
+            "WasmGC",
+            "Js",
+            "Native"
+          ],
+          "optlevel": [
+            "Debug",
+            "Release"
+          ]
+        }
+      },
+      "deps": [],
+      "wbtest-deps": [],
+      "test-deps": [],
+      "artifact": "H:\\humorousClock\\w4\\target\\wasm-gc\\release\\check\\lib\\lib.mi"
+    },
+    {
+      "is-main": false,
+      "is-third-party": true,
+      "root-path": "H:\\humorousClock\\w4\\.mooncakes\\moonbitlang\\wasm4",
+      "root": "moonbitlang/wasm4",
+      "rel": "",
+      "files": {
+        "H:\\humorousClock\\w4\\.mooncakes\\moonbitlang\\wasm4\\ffi.mbt": {
+          "backend": [
+            "Wasm",
+            "WasmGC",
+            "Js",
+            "Native"
+          ],
+          "optlevel": [
+            "Debug",
+            "Release"
+          ]
+        },
+        "H:\\humorousClock\\w4\\.mooncakes\\moonbitlang\\wasm4\\ffi.wasm-gc.mbt": {
+          "backend": [
+            "WasmGC"
+          ],
+          "optlevel": [
+            "Release",
+            "Debug"
+          ]
+        },
+        "H:\\humorousClock\\w4\\.mooncakes\\moonbitlang\\wasm4\\ffi.wasm.mbt": {
+          "backend": [
+            "Wasm"
+          ],
+          "optlevel": [
+            "Release",
+            "Debug"
+          ]
+        },
+        "H:\\humorousClock\\w4\\.mooncakes\\moonbitlang\\wasm4\\function.mbt": {
+          "backend": [
+            "Wasm",
+            "WasmGC",
+            "Js",
+            "Native"
+          ],
+          "optlevel": [
+            "Debug",
+            "Release"
+          ]
+        },
+        "H:\\humorousClock\\w4\\.mooncakes\\moonbitlang\\wasm4\\memory.mbt": {
+          "backend": [
+            "Wasm",
+            "WasmGC",
+            "Js",
+            "Native"
+          ],
+          "optlevel": [
+            "Debug",
+            "Release"
+          ]
+        },
+        "H:\\humorousClock\\w4\\.mooncakes\\moonbitlang\\wasm4\\utils.mbt": {
+          "backend": [
+            "Wasm",
+            "WasmGC",
+            "Js",
+            "Native"
+          ],
+          "optlevel": [
+            "Debug",
+            "Release"
+          ]
+        }
+      },
+      "wbtest-files": {},
+      "test-files": {},
+      "deps": [],
+      "wbtest-deps": [],
+      "test-deps": [],
+      "artifact": "H:\\humorousClock\\w4\\target\\wasm-gc\\release\\check\\.mooncakes\\moonbitlang/wasm4\\wasm4.mi"
+    }
+  ],
+  "deps": [
+    "moonbitlang/wasm4"
+  ],
+  "backend": "wasm-gc",
+  "opt_level": "release",
+  "source": "src"
+}
