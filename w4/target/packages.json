@@ -9,7 +9,31 @@
       "root": "moonbit/demo",
       "rel": "",
       "files": {
+        "H:\\humorousClock\\w4\\src\\anime.mbt": {
+          "backend": [
+            "Wasm",
+            "WasmGC",
+            "Js",
+            "Native"
+          ],
+          "optlevel": [
+            "Debug",
+            "Release"
+          ]
+        },
         "H:\\humorousClock\\w4\\src\\draw.mbt": {
+          "backend": [
+            "Wasm",
+            "WasmGC",
+            "Js",
+            "Native"
+          ],
+          "optlevel": [
+            "Debug",
+            "Release"
+          ]
+        },
+        "H:\\humorousClock\\w4\\src\\event.mbt": {
           "backend": [
             "Wasm",
             "WasmGC",

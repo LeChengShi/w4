@@ -1,0 +1,4 @@
+----- BEGIN MOONBIT COVERAGE -----
+{ "moonbit/demo/lib$hello": [1]
+}
+----- END MOONBIT COVERAGE -----

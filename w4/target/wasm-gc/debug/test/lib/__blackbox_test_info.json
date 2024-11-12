@@ -1,0 +1,1 @@
+{"tests":{"hello_test.mbt":[{"index":0,"func":"__test_68656c6c6f5f746573742e6d6274_0","name":"hello"}]},"no_args_tests":{"hello_test.mbt":[{"index":0,"func":"__test_68656c6c6f5f746573742e6d6274_0","name":"hello"}]},"with_args_tests":{"hello_test.mbt":[]}}
