@@ -16,7 +16,21 @@ let rareEventAmount : Int = rareEvent.length()
 
 let superRareEventAmount : Int = superRareEvent.length()
 
-pub fn getEvent() -> String {
+pub struct Event {
+  mut sunAmount : UInt
+  mut moonAmount : UInt
+}
+
+let event : Event = { sunAmount: 0, moonAmount: 0 }
+
+pub fn runEvents() -> Unit {
+  if game.time % 300 == 0 {
+    game.coin += event.sunAmount
+    game.coin -= event.moonAmount
+  }
+}
+
+pub fn identifyEventEvent() -> String {
   let rand = game.time % 100
   if rand < commonEventChance {
     getCommonEvent()
@@ -42,4 +56,20 @@ fn getRareEvent() -> String {
 fn getSuperRareEvent() -> String {
   let rand = randomer.int(limit=superRareEventAmount)
   superRareEvent[rand]
+}
+
+pub fn identifyEvent(event : String) -> Unit {
+  match event {
+    "None" => return
+    "Sun" => runSunEvent()
+    "Moon" => runMoonEvent()
+  }
+}
+
+fn runSunEvent() -> Unit {
+  event.sunAmount += 1
+}
+
+fn runMoonEvent() -> Unit {
+  event.moonAmount += 1
 }

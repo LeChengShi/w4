@@ -42,19 +42,15 @@ fn drawBall(self : Game) -> Unit {
 
 fn drawCoin(self : Game) -> Unit {
   @wasm4.set_draw_colors(2)
-  @wasm4.text(": \{self.coin}", 50, 130)
+  @wasm4.text(": \{self.coin}", 20, 140)
   coin.blit(
-    40,
-    130,
+    10,
+    140,
     8,
     8,
     { one_bit_per_pixel: false, flip_x: false, flip_y: false, rotate: false },
   )
 }
-
-//fn drawFrame(self : Game) -> Unit {
-//  @wasm4.
-//}
 
 fn none() -> Unit {
   if @wasm4.get_gamepad(index=1).button_right && inipos.x < 80 {

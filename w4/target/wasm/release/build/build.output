@@ -1,3 +1,3 @@
-{"$message_type":"diagnostic","level":"warning","loc":{"path":"H:\\humorousClock\\w4\\src\\draw.mbt","start":{"line":7,"col":7},"end":{"line":7,"col":12}},"message":"Warning: Field 'index' is never read","error_code":1007}
-{"$message_type":"diagnostic","level":"warning","loc":{"path":"H:\\humorousClock\\w4\\src\\game.mbt","start":{"line":56,"col":7},"end":{"line":56,"col":15}},"message":"Warning: Unused variable 'randomer'","error_code":1002}
-{"$message_type":"diagnostic","level":"warning","loc":{"path":"H:\\humorousClock\\w4\\src\\draw.mbt","start":{"line":59,"col":4},"end":{"line":59,"col":8}},"message":"Warning: Unused function 'none'","error_code":1001}
+{"$message_type":"diagnostic","level":"warning","loc":{"path":"H:\\Gacha\\w4\\src\\draw.mbt","start":{"line":7,"col":7},"end":{"line":7,"col":12}},"message":"Warning: Field 'index' is never read","error_code":1007}
+{"$message_type":"diagnostic","level":"warning","loc":{"path":"H:\\Gacha\\w4\\src\\draw.mbt","start":{"line":55,"col":4},"end":{"line":55,"col":8}},"message":"Warning: Unused function 'none'","error_code":1001}
+{"$message_type":"diagnostic","level":"warning","loc":{"path":"H:\\Gacha\\w4\\src\\event.mbt","start":{"line":62,"col":3},"end":{"line":62,"col":16}},"message":"Warning: Partial match, some hints:\n_","error_code":1011}

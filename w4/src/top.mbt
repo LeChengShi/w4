@@ -5,6 +5,11 @@ pub fn start() -> Unit {
 let game : Game = Game::new()
 
 pub fn update() -> Unit {
+  @wasm4.text("G a c h a", 44, 6)
+  runEvents()
+  if game.coin == 0 {
+    gameOver()
+  }
   game.time += 1
   drawBlock(game)
   drawCoin(game)
